@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:stretchColumns="1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="ID:" />
+            <EditText
+                android:enabled="false"
+                android:id="@+id/etID"/>
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:text="Name:" />
+        <EditText
+            android:enabled="true"
+            android:id="@+id/etName"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Mobile:" />
+            <EditText
+                android:enabled="true"
+                android:id="@+id/etMobile"/>
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:text="Email:" />
+        <EditText
+            android:enabled="true"
+            android:id="@+id/etEmail"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Address:" />
+            <EditText
+                android:enabled="true"
+                android:id="@+id/etAddress"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="ImageFile:" />
+            <EditText
+                android:enabled="true"
+                android:id="@+id/etImage"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="Save"
+                android:id="@+id/btnSave"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:text="Cancel"
+                android:id="@+id/btnCancel"
+                android:layout_span="2"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
